@@ -1,0 +1,113 @@
+﻿<!DOCTYPE html>
+<head>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="author" content="" />
+  <meta name="Keywords" content="" />
+  <title>JKR-FR</title>
+	<link id="linkCss" href="style_green.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+	<div id="contain">
+		<div id="header">
+			<h1>J.K Rowling</h1>
+		</div>
+
+		<div id="leftcol">
+			<h3>Le site évolue</h3>
+			<p>Grâce au dur labeur de notre équipe, vous pouvez à présent choisir le style: <br> </p>
+			<ul>
+				<li><a class="changeCss" href="#" id="style_green.css">Style 1</a></li>
+				<li><a class="changeCss" href="#" id="style_pap.css">Style 2</a></li>
+			</ul>
+		</div>
+
+		<div id="menu">
+			<ul>
+				<li><a href="index.html">Accueil</a></li>
+				<li><a href="actu.html">Actualité</a></li>
+				<li><a href="bibliographie.html">Bibliographie</a></li>
+				<li><a href="citations.html">Citations</a></li>
+				<li><a href="jeux.html">Jeux</a></li>
+				<li><a href="abonnement.html">Abonnement</a></li>
+			</ul>
+		</div>
+		<div id="content">
+			<h2>Les couvertures des livres</h2>
+			<h4>Clique sur les images afin de reconstituer la couverture du livre puis indique de quel tome il s'agit.<br><br></h4>
+			<div class="jeu">
+				<table class="jeu">
+					<tr>
+						<td><img id="im01" src="puzzle/a1.jpg" alt="im1" onclick="clic('im01')"/></td>
+						<td><img id="im02" src="puzzle/c2.jpg" alt="im2" onclick="clic('im02')"/></td>
+						<td><img id="im03" src="puzzle/c3.jpg" alt="im3" onclick="clic('im03')"/></td>
+					</tr>
+					<tr>
+						<td><img id="im05" src="puzzle/a3.jpg" alt="im4" onclick="clic('im05')"/></td>
+						<td><img id="im06" src="puzzle/b2.jpg" alt="im5" onclick="clic('im06')"/></td>
+						<td><img id="im07" src="puzzle/a2.jpg" alt="im6" onclick="clic('im07')"/></td>
+						
+					</tr>
+					<tr>
+						<td><img id="im09" src="puzzle/b3.jpg" alt="im7" onclick="clic('im09')"/></td>
+						<td><img id="im10" src="puzzle/c1.jpg" alt="im8" onclick="clic('im10')"/></td>
+						<td><img id="im11" src="puzzle/b1.jpg" alt="im9" onclick="clic('im11')"/></td>
+					</tr>
+				</table>
+				<form name="formrad">
+					<p>
+						Il s'agit du tome
+						<select name="liste" onChange='liste.value'> 
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+							<option value="6">6</option>
+							<option value="7">7</option>
+						</select>de la série.
+					</p>
+					<p>
+						En anglais, le titre est : <span class="italic">Harry Potter</span><br>
+						<input type="radio" name="choix" value="1" checked="checked"/><span class="italic">at the Supermarket</span><br>
+						<input type="radio" name="choix" value="2"/><span class="italic">and the four Dragons</span><br>
+						<input type="radio" name="choix" value="3"/><span class="italic">Chapter 4 : Fascination</span><br>
+						<input type="radio" name="choix" value="4"/><span class="italic">and the Goblet of Fire</span><br>
+					</p>
+					<input type="button" name="but" value="Correction !" onClick="choixprop(formrad)">
+				</form>
+			</div>
+		</div>
+		<div id="footer"></div>
+	</div>
+
+	<script type="text/javascript">
+			var nbclic=1; 
+			var im1;
+		function clic(id){ 			/* on récupère les attributs de l'objet image*/
+			var ima=document.getElementById(id);
+				if(nbclic==2){	
+					var temp=im1.src;		/* la balise reste la même, c'est juste src qui change */
+					im1.src=ima.src;
+					ima.src=temp;
+					nbclic=1;
+				}
+				else{		
+					im1=ima;	
+					nbclic++;
+				}
+			
+		}
+
+	function choixprop(formrad) { 
+	if (formrad.choix[0].checked) { alert("Faux") };
+	if (formrad.choix[1].checked) { alert("Faux") };
+	if (formrad.choix[2].checked) { alert("Faux") }; 
+	if (formrad.choix[3].checked && formrad.liste.value==4) { alert("Juste ! ") };
+	} 
+	</script>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+	<script type="text/javascript" src="jquery.cookie.js"></script>
+	<script type="text/javascript" src="change_css.js"></script>
+</body>
+</html>

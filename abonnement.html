@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html>
+<head>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="author" content="" />
+  <meta name="Keywords" content="" />
+  <title>JKR-FR</title>
+  <link id="linkCss" href="style_green.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+
+<body>
+<script language="JavaScript"> 
+		function allowReset() { 
+			return window.confirm("Sûr(e) ?"); 
+				} 
+				
+		function verif(){
+			if(document.form.mail.value ==""){
+				alert("Entrez un mail");
+				document.form.mail.focus();
+				return false;
+			}
+			return true;
+		}
+</script>
+	<div id="contain">
+	<div id="header">
+	<br><br>
+	<h1>J.K Rowling</h1>
+
+
+	</div>
+
+	<div id="leftcol">
+		<h3>Le site évolue</h3>
+		<p>Grâce au dur labeur de notre équipe, vous pouvez à présent choisir le style: <br> </p>
+			<ul>
+				<li><a class="changeCss" href="#" id="style_green.css">Style 1</a></li>
+				<li><a class="changeCss" href="#" id="style_pap.css">Style 2</a></li>
+			</ul>
+	</div>
+
+	<div id="menu">
+		<ul>
+			<li><a href="index.html"> Accueil</a></li>
+			<li><a href="actu.html">Actualité</a></li>
+			<li><a href="bibliographie.html">Bibliographie</a></li>
+			<li><a href="citations.html">Citations</a></li>
+			<li><a href="jeux.html">Jeux</a></li>
+			<li><a href="abonnement.html">Abonnement</a></li>
+		</ul>
+	</div>
+	<div id="content">
+		<br><h2> Nous suivre </h2><br>
+		<h4>
+		Restez informés des dernières nouveautés dans l'actualité de JK Rowling. <br><br>
+		Son site officiel : <a target="_blank" href="http://www.jkrowling.com/" class="content">http://www.jkrowling.com/</a>
+		<br><br>
+		Un blog de critiques littéraires très bien fait : 
+		<a target="_blank" href="http://xx-silent.blogspot.fr/" class="content">The Silent's Tales</a>
+		<br><br>
+		Inscrivez-vous à la newsletter : <br></h4>
+			<form name="form" onsubmit="return verif();">
+					<h4>E-mail : <input type="email" name="mail" onclick="return verif();" /><br><br>
+					<input type="submit"/>
+				   <br><br><br>Merci !</h4>
+			</form>
+
+
+	</div>
+
+	<div id="footer">
+	</div>
+	</div>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+	<script type="text/javascript" src="jquery.cookie.js"></script>
+	<script type="text/javascript" src="change_css.js"></script>
+</body>
+</html>

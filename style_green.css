@@ -1,0 +1,232 @@
+/* JKRowling - CSS 1 */
+
+img{
+	text-align:center;
+	display:block;
+	margin:0 auto;
+}
+
+body { 
+	font:8pt verdana; 
+	background: #DFD6B4 url('img/bg.gif') repeat-y;
+    background-position: 50% 0px;
+	margin:0;
+	padding:0;
+	height:700px;
+	}
+	
+	
+
+#menu {margin-left: 150px; margin-top: -3px; padding-top: 3px;}
+
+#menu ul {margin:0; background-color:#fff; padding: 5px; text-align:center;}
+
+#menu ul li { display:inline; list-style-type: none;color:#FFFFFF;}
+
+#menu ul li a:link, #menu ul li a:visited { 
+background-color: #BDB76B; 
+color:white; padding: 5px; 
+text-decoration:none; 
+border-right: 1px solid #fff; 
+border-left: 1px solid #fff; 
+}
+
+#menu ul li a:hover { 
+background-color: #C89058; 
+color:white; 
+padding-top: .75em; 
+border-top: 1px outset gray; }
+
+
+#leftcol ul li a:visited{
+	color: #FFFFFF;
+	text-decoration:underline;
+}
+
+#content ul li{
+	font:10pt arial;
+	color:#000000;
+	margin:0;
+}
+a:visited.content{
+	color:black;
+}
+
+
+a:link {
+text-decoration: underline;
+color: white;
+}
+a:visited {
+text-decoration: underline;
+color: purple;
+}
+a:hover {
+text-decoration: none;
+color: #0066FF;
+}
+a:active {
+text-decoration: none;
+color: #FFFFFF;
+}
+
+ul li{
+margin:15px 2px; 
+}
+
+h1 {
+	font:28pt "Lucida Calligraphy", "arial";
+	color:#666;
+	margin:0;
+	padding:40px 0 0 50px;
+}
+
+h2 {
+	font:14pt verdana, arial, sans-serif;
+	color:#666;
+	padding:15px;
+	margin:0;
+    text-align: center;
+}
+
+h3 {
+
+	font:10pt verdana, arial, sans-serif;
+	padding:12px;
+	margin:0;
+    text-align: center;
+}
+
+h4 {
+	font:10pt arial;
+	color:#000000;
+	margin:0;
+    text-align: justify;
+}
+
+p { 
+	font: 8pt arial; 
+	margin: 0px; 
+	text-align: left;
+	}
+	
+#contain {
+
+	width:750px;
+	margin-left:auto;
+	margin-right:auto;
+	background: #FFF;
+        }
+	
+#header {
+    background: #FFF url('img/header.jpg') right no-repeat;
+	width:750px;
+    height:197px;
+	margin-top:4px;
+	
+}
+
+#leftcol {
+	height:250px;
+	width:140px;
+	float:left;
+	padding:5px 4px 5px 0;
+	background-color: #BDB76B;
+	color:#FFFFFF;
+
+}
+
+#leftcol li {
+display: list-item;
+color:white;
+font-family:arial;
+font-size: 13pt;
+}
+
+#leftcol p {
+	padding:3px 18px 3px 18px;
+	margin:0;
+	font-family:Verdana;
+	font-size: 8pt;
+
+}
+
+#content ul li{ margin:15px 2px; }
+
+#content {
+	margin-left:160px;
+	width:575px
+
+}
+
+#content p {
+	padding:3px 18px 3px 18px;
+	margin:0;
+	font:10pt arial;
+}
+
+#footer {
+	width:750px;
+	height:200px;
+	clear:left;
+	background:#ffffff url(img/grassfooter.jpg) bottom no-repeat;
+	padding: 55px 0 5px 0;
+
+}
+
+#footer p {
+	text-align:center;
+	padding-right:8px;
+	font:8pt verdana, arial, sans-serif;
+        color:#000000;
+        
+}
+
+#hp_banner{
+	display:block;
+	text-align:center;
+	height:80px; 
+	width:500px;
+}
+
+#leftImg
+{
+float:left;
+padding: 0 0px 0px 0;
+}
+
+.jeu{
+	margin:auto;
+	text-align:center;
+}
+
+table.jeu{
+	text-align:center;
+	margin : 10px auto auto auto; /* important pour centrer */
+	}
+	
+table.jeu img{
+	margin:auto;
+	text-align:center;
+}
+
+.strike{
+	text-decoration:line-through
+}
+
+.italic{
+	font-style:italic;
+	}
+	
+.tab{
+	margin-left:30px;
+	}
+	
+.miniature{
+	width:70px;
+	height:70px;
+}
+
+table{
+	text-align:center;
+	}
